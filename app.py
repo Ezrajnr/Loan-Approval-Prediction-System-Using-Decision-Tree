@@ -29,9 +29,9 @@ st.subheader("Applicant Information")
 col1, col2 = st.columns(2)
 
 with col1:
-    applicant_income = st.number_input("Applicant Income ($)", min_value=0, value=5000, step=500)
-    coapplicant_income = st.number_input("Coapplicant Income ($)", min_value=0, value=1500, step=500)
-    loan_amount = st.number_input("Loan Amount ($ in thousands)", min_value=10, value=150, step=10)
+    applicant_income = st.number_input("Applicant Income (NGN)", min_value=0, value=5000, step=500)
+    coapplicant_income = st.number_input("Coapplicant Income (NGN)", min_value=0, value=1500, step=500)
+    loan_amount = st.number_input("Loan Amount (NGN in thousands)", min_value=10, value=150, step=10)
     loan_term = st.selectbox("Loan Term (Months)", [120, 180, 240, 360], index=3)
 
 with col2:
